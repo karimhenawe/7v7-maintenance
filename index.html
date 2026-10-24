@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>7v7 Online - Back soon</title>
+<style>
+  :root { --bg:#0b1f14; --card:#12301f; --line:#1f4a31; --text:#f2f7f3; --mute:#9bb8a6; --gold:#f5c542; }
+  * { box-sizing:border-box; }
+  html,body { height:100%; margin:0; }
+  body {
+    background:radial-gradient(ellipse at top, #15392a 0%, var(--bg) 70%);
+    color:var(--text);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    display:flex; align-items:center; justify-content:center; padding:16px;
+  }
+  main { width:100%; max-width:440px; text-align:center; background:var(--card); border:1px solid var(--line); border-radius:20px; padding:36px 24px; }
+  .ball { font-size:56px; line-height:1; display:inline-block; animation:spin 4s linear infinite; }
+  @keyframes spin { to { transform:rotate(360deg); } }
+  h1 { font-size:26px; margin:16px 0 8px; color:var(--gold); }
+  p { margin:0; font-size:17px; line-height:1.5; color:var(--mute); }
+  .ar { margin-top:22px; padding-top:22px; border-top:1px solid var(--line); direction:rtl; }
+  .ar h1 { font-size:24px; }
+  @media (prefers-reduced-motion:reduce) { .ball { animation:none; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="ball" aria-hidden="true">&#9917;</div>
+  <h1>We're doing maintenance</h1>
+  <p>7v7 Online will be back in a bit. Thanks for your patience.</p>
+  <div class="ar" lang="ar">
+    <h1>نقوم بأعمال الصيانة</h1>
+    <p>سنعود قريبًا. شكرًا لصبرك.</p>
+  </div>
+</main>
+</body>
+</html>
